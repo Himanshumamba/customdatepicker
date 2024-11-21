@@ -1,0 +1,132 @@
+.date-picker-input {
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.date-range-picker-container {
+  position: relative;
+}
+
+.date-range-picker {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 10;
+  width: 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day,
+.empty-day {
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day.weekend {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.day.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.day.highlighted {
+  background-color: #cce5ff;
+}
+
+.empty-day {
+  background: none;
+}
+button {
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  background-color: #1e7e34;
+  transform: scale(1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background-color: #c6c6c6;
+  cursor: not-allowed;
+  transform: none;
+}
+.date_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header button {
+  background-color: #E91E63;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header button:hover {
+  background-color: #a10338;
+  transform: scale(1.1);
+}
+
+.header span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.predefined-ranges button {
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.predefined-ranges button:hover {
+  background-color: #e2e6ea;
+  transform: translateY(-2px);
+}
+
+.predefined-ranges button:active {
+  background-color: #dae0e5;
+  transform: translateY(0);
+}
